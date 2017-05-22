@@ -1,0 +1,23 @@
+.tmp
+
+.DS_Store
+
+# emacs artifacts
+*~
+*#
+
+# vim artifacts
+*.swp
+
+# intellij artifacts
+.idea/
+*.iml
+
+# python artifacts
+*.pyc
+__pycache__/
+
+*.log
+
+# npm artifacts
+npm-debug.log.*

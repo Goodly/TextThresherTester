@@ -1,0 +1,47 @@
+version: '2'
+services:
+  thresher_api:
+    # python:2.7-slim installs postgres 9.4 client
+    image: teamforecast/textthresher:latest
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+      - django_rq
+    environment:
+      DATABASE_URL: 'postgres://zz:testonly3UkM429Yp@db:5432/thresher'
+      SECRET_KEY: 'testonlyZTnB25g,jyH7N9:EiAH5shE8K20B93Q9qtOgwgX!FSo1FwGS-zv;MX;C'
+
+  import_export_worker:
+    # Same image as thresher_api
+    # Runs the queue for importing articles and schemas and exporting projects and tasks
+    image: teamforecast/textthresher:latest
+    depends_on:
+      - django_rq
+    environment:
+      DATABASE_URL: 'postgres://zz:testonly3UkM429Yp@db:5432/thresher'
+    command: ["python", "/home/thresher/data/rqworker.py"]
+
+  nlp_hints:
+    image: teamforecast/nlp_hints:latest
+    depends_on:
+      - django_rq
+
+  django_rq:
+    image: redis:3.2.9
+
+  pybossa:
+    # ubuntu:14.04 installs postgres 9.4 client
+    image: teamforecast/pybossa:latest
+    depends_on:
+      - db
+    ports:
+      - "3002:80"
+
+  db:
+    # postgres:9.4
+    image: teamforecast/textthresher_db:latest
+    environment:
+      - POSTGRES_USER=zz
+      - POSTGRES_PASSWORD=testonly3UkM429Yp
+      - POSTGRES_DB=thresher
