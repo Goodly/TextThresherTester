@@ -27,13 +27,15 @@ In a new shell window:
 
 After the containers are running, you can go to:
 
-  * http://localhost:3002/ - They Pybossa app
+  * http://localhost:3002/ - The Pybossa app
   * http://localhost:5000/researcher/ - The TextThresher app
-
-If you are running Docker Toolbox, you will have to enter `docker-machine ls` to find out what IP address your virtual machine is listening on.
-
-  You can open another terminal window and create a tunnel allowing use of localhost by entering `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100` and entering password `tcuser`.
 
 You will need to create a new account in Pybossa. A default admin 'nick' is set up for TextThresher.
 
 Use `docker-compose stop` to stop the containers or `docker-compose down` to both stop and remove the containers.
+
+## Docker Toolbox listens on different IP address
+
+If you are running Docker Toolbox, you will have to enter `docker-machine ls` to find out what IP address your virtual machine is listening on.
+
+You can open another terminal window and create a tunnel allowing use of localhost by entering `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100`. Substitute the IP address for your Docker virtual machine. The VM password is `tcuser`.
