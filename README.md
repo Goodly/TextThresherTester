@@ -21,13 +21,18 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
   1. `docker-compose up`
 
 In a new shell window:
-  2. `./init_pybossa.sh`
-  3. `./init_django.sh`
+
+  1. `./init_pybossa.sh`
+  2. `./init_django.sh`
 
 After the containers are running, you can go to:
 
   * http://localhost:3002/ - They Pybossa app
   * http://localhost:5000/researcher/ - The TextThresher app
+
+If you are running Docker Toolbox, you will have to enter `docker-machine ls` to find out what IP address your virtual machine is listening on.
+
+  You can open another terminal window and create a tunnel allowing use of localhost by entering `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100` and entering password `tcuser`.
 
 You will need to create a new account in Pybossa. A default admin 'nick' is set up for TextThresher.
 
