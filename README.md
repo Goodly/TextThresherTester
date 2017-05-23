@@ -18,7 +18,8 @@ create a Unix group called docker and add users to it:
 
 Once installed, start the Docker application (if on a Mac), then go to the project directory and run:
 
-  1. `docker-compose up`
+  1. `docker-compose pull` - To check for updated images
+  2. `docker-compose up`
 
 In a new shell window:
 
