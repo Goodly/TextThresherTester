@@ -2,7 +2,7 @@ version: '2'
 services:
   thresher_api:
     # python:2.7-slim installs postgres 9.4 client
-    image: teamforecast/textthresher:latest
+    image: goodly/textthresher:latest
     ports:
       - "5000:5000"
     depends_on:
@@ -15,7 +15,7 @@ services:
   import_export_worker:
     # Same image as thresher_api
     # Runs the queue for importing articles and schemas and exporting projects and tasks
-    image: teamforecast/textthresher:latest
+    image: goodly/textthresher:latest
     depends_on:
       - django_rq
     environment:
@@ -23,7 +23,7 @@ services:
     command: ["python", "/home/thresher/data/rqworker.py"]
 
   nlp_hints:
-    image: teamforecast/nlp_hints:latest
+    image: goodly/nlp_hints:latest
     depends_on:
       - django_rq
 
@@ -32,7 +32,7 @@ services:
 
   pybossa:
     # ubuntu:14.04 installs postgres 9.4 client
-    image: teamforecast/pybossa:latest
+    image: goodly/pybossa:latest
     depends_on:
       - db
     ports:
@@ -40,7 +40,7 @@ services:
 
   db:
     # postgres:9.4
-    image: teamforecast/textthresher_db:latest
+    image: goodly/textthresher_db:latest
     environment:
       - POSTGRES_USER=zz
       - POSTGRES_PASSWORD=testonly3UkM429Yp
