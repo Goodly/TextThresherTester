@@ -40,3 +40,15 @@ Use `docker-compose stop` to stop the containers or `docker-compose down` to bot
 If you are running Docker Toolbox, you will have to enter `docker-machine ls` to find out what IP address your virtual machine is listening on.
 
 You can open another terminal window and create a tunnel allowing use of localhost by entering `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100`. Substitute the IP address for your Docker virtual machine. The VM password is `tcuser`.
+
+When using the Git Bash/Mingw command line, you must first:
+
+```
+source leave_paths_alone.sh
+```
+
+Otherwise you will get an error like this:
+```
+$ ./init_pybossa.sh
+sh: 0: Can't open C:/Program Files/Git/ansible_build/init_db.sh
+```
