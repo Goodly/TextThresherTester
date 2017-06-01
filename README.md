@@ -35,9 +35,8 @@ In a new shell window:
 
 After initializing, *Docker Toolbox users* must enter:
 
-  1. `docker-machine ip` # to find out IP address. Usually its 192.168.99.100
-  2. `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100` # to allow using `localhost`
-      The VM password is `tcuser`.
+  1. `./ssh_tunnel.sh` # to allow using `localhost`
+      Say "yes" to continue connecting. The VM password is `tcuser`.
 
 After the containers are running, you can go to:
 
