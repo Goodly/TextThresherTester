@@ -64,6 +64,14 @@ Use `docker-compose down` to both stop and remove the containers. THIS DISCARDS 
 
 ## Docker Toolbox notes
 
+To stop the virtual machine providing Docker Toolbox services:
+
+  * `docker-machine stop default`
+
+So next time you want to run Docker you may need to:
+
+  * `docker-machine start default`
+
 n.b. If you forget `source leave_paths_alone.sh` when using GitBash, you will get an error like this:
 ```
 $ ./init_pybossa.sh
