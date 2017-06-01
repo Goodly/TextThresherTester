@@ -25,11 +25,19 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
 
 In a new shell window:
 
+
+  0. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
   1. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
   2. `./init_pybossa.sh` # Just init Pybossa
   3. `./init_django.sh` # two test users and two empty projects for TextThresher
   4. `./init_thresher.sh` # test users, test projects, and sample articles
   5. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
+
+After initializing, *Docker Toolbox users* must enter:
+
+  1. `docker-machine ip` # to find out IP address. Usually its 192.168.99.100
+  2. `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100` # to allow using `localhost`
+      The VM password is `tcuser`.
 
 After the containers are running, you can go to:
 
@@ -45,19 +53,9 @@ You will need to create a new account in Pybossa. A default admin 'nick' is set 
 
 Use `docker-compose stop` to stop the containers or `docker-compose down` to both stop and remove the containers.
 
-## Docker Toolbox listens on different IP address
+## Docker Toolbox notes
 
-If you are running Docker Toolbox, you will have to enter `docker-machine ls` to find out what IP address your virtual machine is listening on.
-
-You can open another terminal window and create a tunnel allowing use of localhost by entering `ssh -L 5000:192.168.99.100:5000 docker@192.168.99.100`. Substitute the IP address for your Docker virtual machine. The VM password is `tcuser`.
-
-When using the Git Bash/Mingw command line, you must first:
-
-```
-source leave_paths_alone.sh
-```
-
-Otherwise you will get an error like this:
+n.b. If you forget `source leave_paths_alone.sh` when using GitBash, you will get an error like this:
 ```
 $ ./init_pybossa.sh
 sh: 0: Can't open C:/Program Files/Git/ansible_build/init_db.sh
