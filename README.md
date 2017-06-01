@@ -28,12 +28,15 @@ In a new shell window:
   1. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
 
 Choose:
+
   2. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
 
 or:
+
   2. `./init_pybossa.sh` # Just init Pybossa
 
 and one of:
+
   3. `./init_django.sh` # two test users and two empty projects for TextThresher
   3. `./init_thresher.sh` # test users, test projects, and sample articles
   3. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
