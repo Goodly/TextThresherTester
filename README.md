@@ -25,15 +25,21 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
 
 In a new shell window:
 
-  1. `./init_pybossa.sh`
-  2. `./init_django.sh` # test users only
-  3. `./init_thresher.sh` # test users and sample articles
-  4. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
+  1. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
+  2. `./init_pybossa.sh` # Just init Pybossa
+  3. `./init_django.sh` # two test users and two empty projects for TextThresher
+  4. `./init_thresher.sh` # test users, test projects, and sample articles
+  5. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
 
 After the containers are running, you can go to:
 
   * http://localhost:3002/ - The Pybossa app
   * http://localhost:5000/researcher/ - The TextThresher app
+
+After a while, you may want to reclaim the Gigs of space that Docker is using for old images.
+
+  * `docker image prune` # Get rid of outdated images. Leave containers alone.
+  * `docker system prune` # More aggressive clean, will get rid of stopped containers including data in Pybossa and TextThresher databases. May end up re-downloading current images. Run this with containers up and running to avoid over-pruning.
 
 You will need to create a new account in Pybossa. A default admin 'nick' is set up for TextThresher.
 
