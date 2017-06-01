@@ -6,8 +6,10 @@ An annotation interface for detailed text annotation by crowdworkers along resea
 # To setup
 
 The app is run by Docker. If you do not have it already, you will need to install it.
-* For OS X, go [here](https://docs.docker.com/docker-for-mac/).
-* For Windows, go [here](https://docs.docker.com/docker-for-windows/).
+* For OS X El Capitan 10.11 and later, get [Docker for Mac](https://docs.docker.com/docker-for-mac/).
+* For earlier OS X, get [Docker Toolbox for Mac](https://docs.docker.com/toolbox/toolbox_install_mac/).
+* For Windows 10 Pro, with Enterprise and Education (1511 November update, Build 10586 or later), get [Docker for Windows](https://docs.docker.com/docker-for-windows/).
+* For Windows 7, 8.1 or other 10, get [Docker Toolbox for Windows](https://docs.docker.com/toolbox/toolbox_install_windows/).
 * For Ubuntu and other Linux distributions, install
 [docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) and
 [docker-compose](https://docs.docker.com/compose/install/).
@@ -24,7 +26,9 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
 In a new shell window:
 
   1. `./init_pybossa.sh`
-  2. `./init_django.sh`
+  2. `./init_django.sh` # test users only
+  3. `./init_thresher.sh` # test users and sample articles
+  4. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
 
 After the containers are running, you can go to:
 
