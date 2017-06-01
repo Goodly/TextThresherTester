@@ -25,20 +25,25 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
 
 In a new shell window:
 
+  1. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
 
-  0. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
-  1. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
+Choose:
+  2. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
+
+or:
   2. `./init_pybossa.sh` # Just init Pybossa
+
+and one of:
   3. `./init_django.sh` # two test users and two empty projects for TextThresher
-  4. `./init_thresher.sh` # test users, test projects, and sample articles
-  5. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
+  3. `./init_thresher.sh` # test users, test projects, and sample articles
+  3. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
 
 After initializing, *Docker Toolbox users* must enter:
 
-  1. `./ssh_tunnel.sh` # to allow using `localhost`
-      Say "yes" to continue connecting. The VM password is `tcuser`.
+  4. `./ssh_tunnel.sh` # to enable using `localhost`
+      Enter `yes` to continue connecting. The VM password is `tcuser`.
 
-After the containers are running, you can go to:
+Now you can go to:
 
   * http://localhost:3002/ - The Pybossa app
   * http://localhost:5000/researcher/ - The TextThresher app
@@ -50,7 +55,9 @@ After a while, you may want to reclaim the Gigs of space that Docker is using fo
 
 You will need to create a new account in Pybossa. A default admin 'nick' is set up for TextThresher.
 
-Use `docker-compose stop` to stop the containers or `docker-compose down` to both stop and remove the containers.
+Use `docker-compose stop` to stop the containers.
+Enter `exit` in each terminal window. (Some may need more than one `exit` to unwind.)
+Use `docker-compose down` to both stop and remove the containers. THIS DISCARDS THE TEXTTHRESHER and PYBOSSA DATABASES!
 
 ## Docker Toolbox notes
 
