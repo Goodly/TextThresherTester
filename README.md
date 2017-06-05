@@ -21,9 +21,14 @@ create a Unix group called docker and add users to it:
 Once installed, start the Docker application (if on a Mac), then go to the project directory and run:
 
   1. `docker-compose pull` - To check for updated images
-  2. `docker-compose up`
+  2. `docker-compose up` - After about 10 seconds this window stops scrolling info, usually ending with 
+  ```
+  LOG:  autovacuum launcher started
+  LOG:  database system is ready to accept connections
+  ```
+  Now TextThresher is running. Don't wait for a command prompt! Ctrl-C in this window will stop TextThresher.
 
-In a new shell window:
+**In a new shell window**:
 
   1. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
 
