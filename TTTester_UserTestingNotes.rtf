@@ -1,7 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww22480\viewh14640\viewkind0
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue;
+}
+{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red21\green23\blue26;\red255\green255\blue255;
+}
+\margl1440\margr1440\vieww11300\viewh11080\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 Follow these steps to update TextThresher and do user testing.\
@@ -13,16 +15,29 @@ docker-compose pull\
 docker-compose up\
 \
 create new tab in terminal:\
+((if using Windows and Docker Toolbox, you must first enter this command: 
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 source leave_paths_alone.sh))
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
 ./init_pybossa.sh\
 ./init_django.sh\
+((if using Windows and Docker Toolbox, you must next enter this command: 
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ./ssh_tunnel.sh
+\f2\fs32 \cb4  # to enable using 
+\f1\fs28 \cb3 localhost in next step.
+\f2\fs32 \cb4  The password is 
+\f1\fs28 \cb3 tcuser))
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
 \
 open chrome web browser:\
-go to localhost3002	      (Pybossa interface)\
+go to localhost:3002	      (Pybossa interface)\
 enter new credentials\
 my profile>copy api key\
 \
 in separate chrome browser tab:\
-go to localhost5000      (The Researcher interface of TT)\
+go to localhost:5000/researcher      (The Researcher interface of TT)\
 find login button on upper right\
 click login>profile\
 paste in API key from Pybossa\
