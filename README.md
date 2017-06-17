@@ -11,9 +11,9 @@ The app is run by Docker. If you do not have it already, you will need to instal
 * For Windows 10 Pro, with Enterprise and Education (1511 November update, Build 10586 or later), get [Docker for Windows](https://docs.docker.com/docker-for-windows/).
 * For Windows 7, 8.1 or other 10, get [Docker Toolbox for Windows](https://docs.docker.com/toolbox/toolbox_install_windows/).
 * For Ubuntu and other Linux distributions, install
-[docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) and
+[docker](https://docs.docker.com/engine/installation/linux/ubuntu/) and
 [docker-compose](https://docs.docker.com/compose/install/).
-  To [avoid having to use sudo when you use the docker command](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/create-a-docker-group),
+  To [avoid having to use sudo when you use the docker command](https://docs.docker.com/engine/installation/linux/linux-postinstall/),
 create a Unix group called docker and add users to it:
   1. `sudo groupadd docker`
   2. `sudo usermod -aG docker $USER`
@@ -43,8 +43,8 @@ or:
 and one of:
 
   3. `./init_django.sh` # two test users and two empty projects for TextThresher
-  3. `./init_thresher.sh` # test users, test projects, and sample articles
-  3. `./init_thresher.sh --with-annotations` # test users, sample articles, and quiz data
+  3. `./init_thresher.sh` # test users, two empty projects, sample articles without highlights
+  3. `./init_thresher.sh --with-annotations` # test users, two empty projects, sample articles with highlights
 
 After initializing, *Docker Toolbox users* must enter:
 
