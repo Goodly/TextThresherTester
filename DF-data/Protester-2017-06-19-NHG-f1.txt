@@ -346,7 +346,7 @@ if 3.04.02, then 3.06
 4.13 mc Approximately when were the protesters injured?
 4.13.01 Pre-dawn (12am-6am)
 4.13.02 Morning (6am-12pm)
-4.13.04 Midday (12pm-3pm)
+4.13.03 Midday (12pm-3pm)
 4.13.04 Afternoon (3pm-6pm)
 4.13.05 Evening (6pm-9pm)
 4.13.06 Night (9pm-12am)
