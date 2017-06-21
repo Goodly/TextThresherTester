@@ -57,7 +57,7 @@ title: Protester
 1.06.03 Other
 
 
-1.07 mc Which of the following information does the text give about the event's setting, time, or attendees?
+1.07 cl Which of the following information does the text give about the event's setting, time, or attendees?
 1.07.01 Location
 1.07.02 Time 
 1.07.03 The number and/or kinds of people who attended
