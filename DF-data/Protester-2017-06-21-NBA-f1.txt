@@ -1,6 +1,6 @@
 title: Protester
  
-1 Protester-initiated Event informationsetting, time and attendees
+1 Info about a protester-initiated event activities, setting, time and attendees
 3 Police presence and activities
 4 Injuries/Arrests
 5 Community/bystander response
@@ -57,13 +57,14 @@ title: Protester
 1.06.03 Other
 
 
-1.07 mc Which of the following information does the text give about the event's location?
-1.07.01 The exact location or address
-1.07.02 An approximate location, or clues about where the event took place 
-1.07.03 Information not given
+1.07 mc Which of the following information does the text give about the event's setting, time, or attendees?
+1.07.01 Location
+1.07.02 Time 
+1.07.03 The number and/or kinds of people who attended
+1.07.04 No information given
 
 
-1.08 cl Did the event take place at any of the following kinds of locations?
+1.08 cl Please highlight text describing whether the event took place at any of the following kinds of locations?
 1.08.01 Local bank 
 1.08.02 Local park 
 1.08.03 At or near the protester’s camp
@@ -222,6 +223,11 @@ if 1.01.07, then 1.03
 if 1.01.10, then 1.05
 if 1.01.11, then 1.06
 if 1.03.any, then 1.04
+if 1.07.01, then 1.08
+if 1.07.02, then 1.18
+if 1.07.03, then 1.09
+if 1.07.03, then 1.11
+if 1.07.03, then 1.12
 if 1.09.01, then 1.10
 if 1.09.02, then 1.10
 if 1.12.01, then 1.13
