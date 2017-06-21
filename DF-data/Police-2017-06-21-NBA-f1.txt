@@ -1,12 +1,12 @@
 title: Police
 
-1 Event type
+1 Type of police-initiated event
 2 Event setting and composition (location, attendance and crowd composition/demographics, time/duration)
 3 Police Gear and Activities
 4 Arrests/injuries
 
-1.01 mc What type of event is described in the highlighted text?
-1.01.01 Raid of camp
+1.01 mc What type of event is described in the bolded text?
+1.01.01 Raid of camp or eviction of campers
 1.01.02 Showdown at the camp	
 1.01.03 Warnings or threats at the camp or through the media
 1.01.04 Surveillance of camp

@@ -1,14 +1,13 @@
 title: Protester
  
-1 Event type
-2 Event setting, time and attendees
+1 Protester-initiated Event informationsetting, time and attendees
 3 Police presence and activities
 4 Injuries/Arrests
 5 Community/bystander response
 6 Permit information
  
-1.01 dd What type of event is described in the highlighted text?
-1.01.01 bubble bath
+1.01 dd What type of event is described in the bolded text?
+1.01.01 March/Parade
 1.01.02 Rally/Demonstration
 1.01.03 Strike
 1.01.04 Blocking Action
@@ -25,8 +24,9 @@ title: Protester
 1.02.02 Street 
 1.02.03 Public transportation 
 1.02.04 Airport 
-1.02.05 Shipping port 
-1.02.06 Other
+1.02.05 Shipping port
+1.02.06 Bank
+1.02.07 Other
 
 1.03 mc What type of event did the protesters disrupt?
 1.03.01 Political campaign
@@ -50,183 +50,188 @@ title: Protester
 1.05.03 Bombing 
 1.05.04 Assault 
 1.05.05 Other
+
 1.06 mc What type of strategic sabotage occurred?
 1.06.01 Pre-planned vandalism 
 1.06.02 Pre-planned arson 
 1.06.03 Other
+
+
+1.07 mc Which of the following information does the text give about the event's location?
+1.07.01 The exact location or address
+1.07.02 An approximate location, or clues about where the event took place 
+1.07.03 Information not given
+
+
+1.08 cl Did the event take place at any of the following kinds of locations?
+1.08.01 Local bank 
+1.08.02 Local park 
+1.08.03 At or near the protester’s camp
+1.08.04 Downtown
+1.08.05 At or near City Hall
+1.08.06 At or near a public transportation terminal (e.g. train, subway, bus stop)
+1.08.07 Information not given
+1.08.08 Other
+
+1.09 mc Which of the following information does the text give about the number of protesters in attendance?
+1.09.01 The exact number
+1.09.02 An approximate number
+1.09.03 Information not given
+
+1.10 mc Who estimated the number of protesters in attendance?
+1.10.01 Media, Journalist, Author
+1.10.02 Police
+1.10.03 City official
+1.10.04 Protester
+1.10.05 Citizen or other person not affiliated with the camp, media, police, or city
+1.10.06 Information not given
+1.10.07 Other
+
+1.11 cl Were any of the following groups at the event?
+1.11.01 Counter-protesters
+1.11.02 Anarchists or “Black Block”
+1.11.03 Celebrities
+1.11.04 Homeless
+1.11.05 Union members
+1.11.06 Occupiers from other cities
+1.11.08 “Occupy the Hood” protesters
+1.11.09 Other groups allied with Occupy
+1.11.10 Allied politicians
+1.11.11 Information not given
+
+1.12 cl Does the text provide any of the following information about who was in attendance?
+1.12.01 The ethnic/gender/religious/political identities of participants
+1.12.02 The economic class or circumstances of the participants
+1.12.03 The age ranges of the participants
+1.12.04 The education level of the participants
+1.12.05 The occupations or job status of participants
+1.12.06 Information not given
+
+1.13 cl Which of the following groups and identities were in attendance?
+1.13.01 A wide variety of groups and identities
+1.13.02 Women
+1.13.03 Anarchists
+1.13.04 Homeless
+1.13.05 Union members
+1.13.06 Reinforcement campers from other cities
+1.13.07 Religious leaders or communities
+1.13.08 Occupy the Hood protesters
+1.13.09 Other groups allied with Occupy
+1.13.10 Celebrities 
+1.13.11 Black/African-American 
+1.13.12 Hispanic/Latino/Chicano 
+1.13.13 Asian-American/Pacific Islander 
+1.13.14 Native American
+1.13.15 Information not given
+
+1.14 cl Which of the following economic class groups were in attendance?  
+1.14.01 A wide variety of classes
+1.14.02 Working/Lower (less than $24,999)
+1.14.03 Lower-Middle ($25,000-$49,999)
+1.14.04 Middle ($50,000-$74,999)
+1.14.05 Upper-Middle ($75,000-$99,999)
+1.14.06 Upper ($100,000-$249,999)
+1.14.07 The 1% ($250,000+)
+1.14.08 Information not given
+
+1.15 cl Which of the following age groups were in attendance?
+1.15.01 A wide variety of ages
+1.15.02 Under 18 
+1.15.03 18-25 
+1.15.04 26-35 
+1.15.05 36-45
+1.15.06 46-65
+1.15.07 66 or older
+1.15.08 Information not given
+
+1.16 cl Which of the following educational attainment groups were in attendance?  
+1.16.01 A wide variety of educational attainment levels
+1.16.02 Less than high school diploma
+1.16.03 High school diploma/GED
+1.16.04 Some college (2 years or fewer)
+1.16.05 College degree (B.A., B.S., trade school, technical school)
+1.16.06 Master's degree
+1.16.07 PhD 
+1.16.08 Information not given
+
+1.17 cl Which of the following career fields/occupations are held by people who attended the event?
+1.17.01 A wide variety of career fields/occupations
+1.17.02 Unemployed
+1.17.03 Architecture and Engineering
+1.17.04 Arts, Entertainment, and Media
+1.17.05 Cleaning and Janitorial
+1.17.06 Business and Finance
+1.17.07 Community and Social Services
+1.17.10 Computer and Mathematical
+1.17.11 Construction and Maintenance
+1.17.12 Education and Library
+1.17.13 Farming, Fishing, and Forestry
+1.17.14 Food Services
+1.17.15 Healthcare Practitioners, Technical, and Support
+1.17.16 Legal
+1.17.17 Life, Physical, and Social Science
+1.17.18 Office and Management
+1.17.19 Military
+1.17.20 Personal Care and Service
+1.17.21 Production
+1.17.22 Sales and Marketing
+1.17.23 Transportation 
+1.17.24 Student
+1.17.25 Retired
+
+1.18 cl Which of the following information does the text give about when the event occurred? 
+1.18.01 The exact start time
+1.18.02 An approximate start time
+1.18.03 The exact end time
+1.18.04 An approximate end time
+1.18.05 The duration (the length of time the event lasted after it began)
+1.18.06 Information not given
+
+1.19 mc Approximately when did the event begin? 
+1.19.01 Pre-dawn (12am-6am)
+1.19.02 Morning (6am-12pm)
+1.19.03 Midday (12pm-3pm)
+1.19.04 Afternoon (3pm-6pm)
+1.19.05 Evening (6pm-9pm)
+1.19.06 Night (9pm-12am)
+
+1.20 mc Approximately when did the event end?
+1.20.01 Pre-dawn (12am-6am)
+1.20.02 Morning (6am-12pm)
+1.20.03 Midday (12pm-3pm)
+1.20.04 Afternoon (3pm-6pm)
+1.20.05 Evening (6pm-9pm)
+1.20.06 Night (9pm-12am
+
+1.21 mc Approximately how long did the event last?
+1.21.01 Less than 15 minutes
+1.21.02 “Under half an hour”: 16-30 minutes
+1.21.03 “Over half an hour”: 31-60 minutes
+1.21.04 “A few hours”: 1-2 hours
+1.21.05 “More than a few hours”: 3-5 hours
+1.21.06 “Over 6 hours”: 6-11 hours
+1.21.07 “Half a day”: 12-15 hours
+1.21.08 “A full day”: 16-24 hours
+1.21.09 “Overnight” or “More than 1 day”
+ 
+
+
 
 if 1.01.04, then 1.02
 if 1.01.07, then 1.03
 if 1.01.10, then 1.05
 if 1.01.11, then 1.06
 if 1.03.any, then 1.04
-
-2.01 mc Which of the following information does the text give about the event's location?
-2.01.01 The exact location or address
-2.01.02 An approximate location, or clues about where the event took place 
-2.01.03 Information not given
-
-
-2.03 cl Did the event take place at any of the following kinds of locations?
-2.03.01 Local bank 
-2.03.02 Local park 
-2.03.03 At or near the protester’s camp
-2.03.04 Downtown
-2.03.05 At or near City Hall
-2.03.06 At or near a public transportation terminal (e.g. train, subway, bus stop) 
-2.03.07 Other
-
-2.04 mc Which of the following information does the text give about the number of protesters in attendance?
-2.04.01 The exact number
-2.04.02 An approximate number
-2.04.03 Information not given
-
-2.07 mc Who estimated the number of protesters in attendance?
-2.07.01 Media, Journalist, Author
-2.07.02 Police
-2.07.03 City official
-2.07.04 Protester
-2.07.05 Citizen or other person not affiliated with the camp, media, police, or city
-2.07.06 Information not given
-2.07.07 Other
-
-2.05 cl Were any of the following groups at the event?
-2.05.01 Counter-protesters
-2.05.02 Anarchists or “Black Block”
-2.05.03 Celebrities
-2.05.04 Homeless
-2.05.05 Union members
-2.05.06 Occupiers from other cities
-2.05.08 “Occupy the Hood” protesters
-2.05.09 Other groups allied with Occupy
-2.05.10 Allied politicians
-
-2.10 cl Does the text provide any of the following information about who was in attendance?
-2.10.01 The ethnic/gender/religious/political identities of participants
-2.10.02 The economic class or circumstances of the participants
-2.10.03 The age ranges of the participants
-2.10.04 The education level of the participants
-2.10.05 The occupations or job status of participants
-
-2.12 cl Which of the following groups and identities were in attendance?
-2.12.01 A wide variety of groups and identities
-2.12.02 Women
-2.12.03 Anarchists
-2.12.04 Homeless
-2.12.05 Union members
-2.12.06 Reinforcement campers from other cities
-2.12.07 Religious leaders or communities
-2.12.08 Occupy the Hood protesters
-2.12.09 Other groups allied with Occupy
-2.12.10 Celebrities 
-2.12.11 Black/African-American 
-2.12.12 Hispanic/Latino/Chicano 
-2.12.13 Asian-American/Pacific Islander 
-2.12.14 Native American
-2.12.15 Information not given
-
-2.13 cl Which of the following economic class groups were in attendance?  
-2.13.01 A wide variety of classes
-2.13.02 Working/Lower (less than $24,999)
-2.13.03 Lower-Middle ($25,000-$49,999)
-2.13.04 Middle ($50,000-$74,999)
-2.13.05 Upper-Middle ($75,000-$99,999)
-2.13.06 Upper ($100,000-$249,999)
-2.13.07 The 1% ($250,000+)
-2.13.08 Information not given
-
-2.14 cl Which of the following age groups were in attendance?
-2.14.01 A wide variety of ages
-2.14.02 Under 18 
-2.14.03 18-25 
-2.14.04 26-35 
-2.14.05 36-45
-2.14.06 46-65
-2.14.07 66 or older
-2.14.08 Information not given
-
-2.15 cl Which of the following educational attainment groups were in attendance?  
-2.15.01 A wide variety of educational attainment levels
-2.15.02 Less than high school diploma
-2.15.03 High school diploma/GED
-2.15.04 Some college (2 years or fewer)
-2.15.05 College degree (B.A., B.S., trade school, technical school)
-2.15.06 Master's degree
-2.15.07 PhD 
-2.15.08 Information not given
-
-2.16 cl Which of the following career fields/occupations are held by people who attended the event?
-2.16.01 A wide variety of career fields/occupations
-2.16.02 Unemployed
-2.16.03 Architecture and Engineering
-2.16.04 Arts, Entertainment, and Media
-2.16.05 Cleaning and Janitorial
-2.16.06 Business and Finance
-2.16.07 Community and Social Services
-2.16.10 Computer and Mathematical
-2.16.11 Construction and Maintenance
-2.16.12 Education and Library
-2.16.13 Farming, Fishing, and Forestry
-2.16.14 Food Services
-2.16.15 Healthcare Practitioners, Technical, and Support
-2.16.16 Legal
-2.16.17 Life, Physical, and Social Science
-2.16.18 Office and Management
-2.16.19 Military
-2.16.20 Personal Care and Service
-2.16.21 Production
-2.16.22 Sales and Marketing
-2.16.23 Transportation 
-2.16.24 Student
-2.16.25 Retired
-
-2.17 cl Which of the following information does the text give about when the event occurred? 
-2.17.01 The exact start time
-2.17.02 An approximate start time
-2.17.03 The exact end time
-2.17.04 An approximate end time
-2.17.05 The duration (the length of time the event lasted after it began)
-2.17.06 Information not given
-
-2.19 mc Approximately when did the event begin? 
-2.19.01 Pre-dawn (12am-6am)
-2.19.02 Morning (6am-12pm)
-2.19.03 Midday (12pm-3pm)
-2.19.04 Afternoon (3pm-6pm)
-2.19.05 Evening (6pm-9pm)
-2.19.06 Night (9pm-12am)
-
-2.21 mc Approximately when did the event end?
-2.21.01 Pre-dawn (12am-6am)
-2.21.02 Morning (6am-12pm)
-2.21.03 Midday (12pm-3pm)
-2.21.04 Afternoon (3pm-6pm)
-2.21.05 Evening (6pm-9pm)
-2.21.06 Night (9pm-12am
-
-2.22 mc Approximately how long did the event last?
-2.22.01 Less than 15 minutes
-2.22.02 “Under half an hour”: 16-30 minutes
-2.22.03 “Over half an hour”: 31-60 minutes
-2.22.04 “A few hours”: 1-2 hours
-2.22.05 “More than a few hours”: 3-5 hours
-2.22.06 “Over 6 hours”: 6-11 hours
-2.22.07 “Half a day”: 12-15 hours
-2.22.08 “A full day”: 16-24 hours
-2.22.09 “Overnight” or “More than 1 day”
- 
-
-
-if 2.04.01, then 2.07
-if 2.04.02, then 2.07
-if 2.10.01, then 2.12
-if 2.10.02, then 2.13
-if 2.10.03, then 2.14
-if 2.10.04, then 2.15
-if 2.10.05, then 2.16
-if 2.17.02, then 2.19
-if 2.17.04, then 2.21
-if 2.17.05, then 2.22
+if 1.09.01, then 1.10
+if 1.09.02, then 1.10
+if 1.12.01, then 1.13
+if 1.12.02, then 1.14
+if 1.12.03, then 1.15
+if 1.12.04, then 1.16
+if 1.12.05, then 1.17
+if 1.18.02, then 1.19
+if 1.18.04, then 1.20
+if 1.18.05, then 1.21
 
 
 
@@ -318,7 +323,8 @@ if 3.04.02, then 3.06
 4.04.05 News reporters
 4.04.06 City officials
 4.04.07 Undercover police
-4.04.08 Other
+4.04.08 Nobody
+4.04.09 Other
 
 4.05 mc Which of the following information does the text give about when the arrests occurred?
 4.05.01 The exact time (highlight only the precise time information)
