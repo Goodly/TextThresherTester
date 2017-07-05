@@ -33,6 +33,14 @@ services:
   pybossa:
     # ubuntu:14.04 installs postgres 9.4 client
     image: goodly/pybossa:latest
+    environment:
+      - PYBOSSA_SECRET=test-only-y8y2i4ISpfwEMhLjUfXH9e5qA8qJkKA31tuLakvy
+      - PYBOSSA_SESSION_SECRET=test-only-y8y2i4ISpfwEMhLjUfXH9e5qA8qJkKA31tuLakvy
+      - PYBOSSA_DATABASE_URL=postgresql://pybossa:tester@db/pybossa
+      - PYBOSSA_ITSDANGEROUS_SECRET=test-only-2R1ucOk8KxEeh5SCaXcWPt4oDf2sHQvpiyHAPoyX
+      - PYBOSSA_BRAND=Pybossa
+      - PYBOSSA_TITLE=Pybossa
+      - PYBOSSA_LOGO=default_logo.svg
     depends_on:
       - db
     ports:
