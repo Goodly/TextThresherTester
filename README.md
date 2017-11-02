@@ -28,10 +28,6 @@ Once installed, start the Docker application (if on a Mac), then go to the proje
   ```
   Now TextThresher is running. Don't wait for a command prompt! Ctrl-C in this window will stop TextThresher.
 
-**In a new shell window**:
-
-  1. `source leave_paths_alone.sh` # Only need if using Docker Toolbox
-
 Choose:
 
   2. `./init_docker.sh` # Inits Pybossa and loads all TextThresher sample data
@@ -76,9 +72,3 @@ To stop the virtual machine providing Docker Toolbox services:
 So next time you want to run Docker you may need to:
 
   * `docker-machine start default`
-
-n.b. If you forget `source leave_paths_alone.sh` when using GitBash, you will get an error like this:
-```
-$ ./init_pybossa.sh
-sh: 0: Can't open C:/Program Files/Git/ansible_build/init_db.sh
-```
